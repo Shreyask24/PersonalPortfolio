@@ -4,7 +4,6 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
@@ -14,14 +13,12 @@ import {
     mongodb,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
+    valethi,
+    oytie,
+    codsoft,
+    chatapp,
     jobit,
-    tripguide,
+    movie,
     threejs,
 } from "../assets";
 
@@ -46,7 +43,7 @@ const services = [
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "React Developer",
         icon: mobile,
     },
     {
@@ -71,10 +68,6 @@ const technologies = [
     {
         name: "JavaScript",
         icon: javascript,
-    },
-    {
-        name: "TypeScript",
-        icon: typescript,
     },
     {
         name: "React JS",
@@ -108,32 +101,15 @@ const technologies = [
         name: "figma",
         icon: figma,
     },
-    {
-        name: "docker",
-        icon: docker,
-    },
 ];
 
 const experiences = [
     {
-        title: "Valethi Technologies",
-        company_name: "Worked as an Intern",
-        icon: starbucks,
-        iconBg: "#383E56",
-        date: "March 2020 - June 2020",
-        points: [
-            "Commmunicating with the foreign clients.",
-            "Resolving their issues related to the products.",
-            "Writing an effective mail to resolve their problems.",
-            "Getting feedbacks from the clients.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        title: "Frontend Developer",
+        company_name: "Oytie Pvt Ltd (Internship)",
+        icon: oytie,
+        iconBg: "#000000",
+        date: "Dec 2023 - Jan 2024",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -143,30 +119,42 @@ const experiences = [
     },
     {
         title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        company_name: "Codsoft (Internship)",
+        icon: codsoft,
+        iconBg: "#ffffff",
+        date: "Dec 2023 - Jan 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed and built a Personal portfolio showcasing my skills and projects using HTML, CSS, and JavaScript, resulting in increased visibility and credibility for my work.",
+            "Created a dynamic Calculator application using JavaScript, providing users with a convenient tool for quick calculations.",
+            "Designed and implemented a visually appealing Landing page using HTML and CSS, effectively capturing the attention of website visitors and promoting user engagement.",
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        title: "Valethi Technologies",
+        company_name: "(Internship)",
+        icon: valethi,
+        iconBg: "#ffffff",
+        date: "March 2020 - June 2020",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Commmunicating with the foreign clients.",
+            "Resolving their issues related to the products.",
+            "Writing an effective mail to resolve their problems.",
+            "Getting feedbacks from the clients.",
         ],
     },
+    // {
+    //     title: "Full stack Developer",
+    //     company_name: "Meta",
+    //     icon: meta,
+    //     iconBg: "#E6DEDD",
+    //     date: "Jan 2023 - Present",
+    //     points: [
+    //         "Developing and maintaining web applications using React.js and other related technologies.",
+    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //         "Implementing responsive design and ensuring cross-browser compatibility.",
+    //         "Participating in code reviews and providing constructive feedback to other developers.",
+    //     ],
+    // },
 ];
 
 const testimonials = [
@@ -198,30 +186,30 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Chat Application",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Implemented user authentication and secure login/logout functionality Enabled users to switch accounts to chat seamlessly Integrated image sharing feature for enhanced communication experience",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "mongodb",
+                name: "sockets",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "restapi",
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: chatapp,
+        source_code_link: "https://github.com/Shreyask24/Chat-Application",
     },
     {
-        name: "Job IT",
+        name: "Video Calling Application",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "Established seamless user connection using socket.io Implemented unique ID generation for sending to other users Enabled users to join video calls through the generated ID. User's are able to diconnect the calls",
         tags: [
             {
                 name: "react",
@@ -232,24 +220,24 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "scss",
+                name: "sockets",
                 color: "pink-text-gradient",
             },
         ],
         image: jobit,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/Shreyask24/Video-chat-app",
     },
     {
-        name: "Trip Guide",
+        name: "Movie Appication",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "A comprehensive movie details platform that allows users to watch various movie details like the movie's release date, ratings, summary of that particular movie.",
         tags: [
             {
-                name: "nextjs",
+                name: "reactjs",
                 color: "blue-text-gradient",
             },
             {
-                name: "supabase",
+                name: "api",
                 color: "green-text-gradient",
             },
             {
@@ -257,8 +245,8 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/Shreyask24",
+        image: movie,
+        source_code_link: "https://github.com/Shreyask24/Movie_App",
     },
 ];
 
