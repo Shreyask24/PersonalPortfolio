@@ -228,12 +228,12 @@ const projects = [
         source_code_link: "https://github.com/Shreyask24/Video-chat-app",
     },
     {
-        name: "Movie Appication",
+        name: "Menu Management API",
         description:
-            "A comprehensive movie details platform that allows users to watch various movie details like the movie's release date, ratings, summary of that particular movie.",
+            "This project is a Node.js backend server for managing a menu with categories, subcategories, and items. The API allows you to create, retrieve, update, and delete categories, subcategories, and items.",
         tags: [
             {
-                name: "reactjs",
+                name: "nodejs",
                 color: "blue-text-gradient",
             },
             {
@@ -241,12 +241,16 @@ const projects = [
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "expressjs",
                 color: "pink-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "blue-text-gradient",
             },
         ],
         image: movie,
-        source_code_link: "https://github.com/Shreyask24/Movie_App",
+        source_code_link: "https://github.com/Shreyask24/Menu-Management-API",
     },
 ];
 

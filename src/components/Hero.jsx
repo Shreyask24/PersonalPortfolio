@@ -3,7 +3,8 @@ import { motion } from "framer-motion"
 import { styles } from "../styles"
 import { ComputersCanvas } from "./canvas";
 
-
+import PersoalDesktop from "../assets/Personal-desktop.png"
+import { Tilt } from "react-tilt";
 
 
 const Hero = () => {
@@ -25,8 +26,9 @@ const Hero = () => {
         <div>
 
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#915eff]"> Shreyas Kallurkar </span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}> I develop 3D visuals,
-            <br className="sm:block hidden " />user interfaces and web applications</p>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}> I build interactive user interfaces and scalable web apps.
+            <br className="sm:block hidden " /> Focused on efficiency and user experience.
+          </p>
 
         </div>
 
@@ -34,9 +36,11 @@ const Hero = () => {
       </div>
 
 
+      <div className=" flex justify-center items-center ">
 
-
-      <ComputersCanvas />
+        <img className="my-80 hidden mt-[62vh] w-[90%] xl:block xl:mt-[48vh] lg:block lg:w-[30%]" src={PersoalDesktop} alt="" />
+      </div>
+      {/* <ComputersCanvas /> */}
 
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex 
@@ -47,7 +51,7 @@ const Hero = () => {
 
           {/* The Scrolling Animation */}
 
-          <div className="w-[35px] h-[64px] rounded-3xl border-4
+          <div className="w-[35px] h-[64px] mb-[-20vh] rounded-3xl border-4
      border-secondary flex justify-center items-start p-2">
 
             <motion.div
