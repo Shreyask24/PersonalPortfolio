@@ -15,6 +15,7 @@ import {
     figma,
     valethi,
     oytie,
+    jellylogic,
     codsoft,
     chatapp,
     jobit,
@@ -105,8 +106,34 @@ const technologies = [
 
 const experiences = [
     {
-        title: "Frontend Developer",
-        company_name: "Oytie Pvt Ltd (Internship)",
+        title: "Product Intern",
+        company_name: "Kaash Overseas",
+        icon: web,
+        iconBg: "#000000",
+        date: "Nov 2024 - Apr 2025",
+        points: [
+            "Built a customer support platform (Helpdesk) using React, TypeScript, MUI, and React Hook Form, featuring dedicated portals for Customer, Staff, and Admin — each with role-specific access, workflows, and ticket management capabilities.",
+            "Contributed to a Flight Booking Web App by implementing real-time API integrations with Next.js and Tanstack Query, while closely collaborating with the backend team to handle evolving payload structures like Fare Details, and Price Details for features such as Fare Fetching.",
+            "Regularly worked on production fixes, integrated features like auto-filled traveller data, date-triggered search behaviors, and multi-select airline filters",
+            "Designed a dynamic seat selection UI that adapts to various aircraft layouts, rendering labeled rows, handling empty rows gracefully, and reflecting real-time availability from the backend.",
+        ],
+    },
+    {
+        title: "Full Stack Developer (Intern)",
+        company_name: "Jellylogic, Bluemap IT Solutions Pvt Ltd",
+        icon: jellylogic,
+        iconBg: "#000000",
+        date: "Jul 2024 - Oct 2024",
+        points: [
+            "Created frontend modules for the Hakara website with a mobile-first approach.",
+            "Developed analytics sub-features for Liminal using Node.js, contributing to backend logic for visualizations.",
+            "Helped ship UI components for Unity Bank’s website using React, while collaborating on design iterations.",
+            "Worked closely with senior developers to understand project requirements and deliver production-ready code.",
+        ],
+    },
+    {
+        title: "Frontend Developer (Intern)",
+        company_name: "Oytie Pvt Ltd",
         icon: oytie,
         iconBg: "#000000",
         date: "Dec 2023 - Jan 2024",
@@ -118,8 +145,8 @@ const experiences = [
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Codsoft (Internship)",
+        title: "Web Developer (Intern)",
+        company_name: "Codsoft",
         icon: codsoft,
         iconBg: "#ffffff",
         date: "Dec 2023 - Jan 2024",
@@ -131,7 +158,7 @@ const experiences = [
     },
     {
         title: "Valethi Technologies",
-        company_name: "(Internship)",
+        company_name: "(Intern)",
         icon: valethi,
         iconBg: "#ffffff",
         date: "March 2020 - June 2020",
@@ -227,31 +254,31 @@ const projects = [
         image: jobit,
         source_code_link: "https://github.com/Shreyask24/Video-chat-app",
     },
-    {
-        name: "Menu Management API",
-        description:
-            "This project is a Node.js backend server for managing a menu with categories, subcategories, and items. The API allows you to create, retrieve, update, and delete categories, subcategories, and items.",
-        tags: [
-            {
-                name: "nodejs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "api",
-                color: "green-text-gradient",
-            },
-            {
-                name: "expressjs",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: movie,
-        source_code_link: "https://github.com/Shreyask24/Menu-Management-API",
-    },
+    // {
+    //     name: "Menu Management API",
+    //     description:
+    //         "This project is a Node.js backend server for managing a menu with categories, subcategories, and items. The API allows you to create, retrieve, update, and delete categories, subcategories, and items.",
+    //     tags: [
+    //         {
+    //             name: "nodejs",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "api",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "expressjs",
+    //             color: "pink-text-gradient",
+    //         },
+    //         {
+    //             name: "mongodb",
+    //             color: "blue-text-gradient",
+    //         },
+    //     ],
+    //     image: movie,
+    //     source_code_link: "https://github.com/Shreyask24/Menu-Management-API",
+    // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

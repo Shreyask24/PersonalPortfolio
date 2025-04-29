@@ -22,6 +22,7 @@ import threejs from "./tech/threejs.svg";
 import valethi from "./company/valethi.png";
 import codsoft from "./company/codsoft.png";
 import oytie from "./company/oytie.png";
+import jellylogic from "./company/jellylogic.png";
 
 import movie from "./movie.png";
 import chatapp from "./chatapp.jpeg";
@@ -50,6 +51,7 @@ export {
   valethi,
   codsoft,
   oytie,
+  jellylogic,
   chatapp,
   movie,
   jobit
