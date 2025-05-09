@@ -5,6 +5,8 @@ import { ComputersCanvas } from "./canvas";
 
 import PersoalDesktop from "../assets/Personal-desktop.png"
 import { Tilt } from "react-tilt";
+import { SparklesPreview } from "./Sparkles";
+import { FlipWordsDemo } from "./TextGenerator";
 
 
 const Hero = () => {
@@ -13,24 +15,20 @@ const Hero = () => {
 
     <section className="relative w-full h-screen mx-auto">
 
-      <div className={`${styles.paddingX} absolute inset-0 top-[120px] 
-      max-w-7xl mx-auto flex flex-row items-start gap-5 `}>
+      <div className="flex flex-col justify-center items-center w-full h-full">
 
-        <div className="flex flex-col justify-center items-center mt-5">
 
-          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient " />
 
+        <h1 className={`${styles.heroHeadText} text-white text-center w-[70%]`}>Transforming Ideas into Successful <span className="text-[#915eff]"> Reality </span></h1>
+
+        <div className="w-[50%]">
+          <FlipWordsDemo />
         </div>
 
-        <div>
-
-          <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#915eff]"> Shreyas Kallurkar </span></h1>
+        {/* <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#915eff]"> Shreyas Kallurkar </span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}> I build interactive user interfaces and scalable web apps.
             <br className="sm:block hidden " /> Focused on efficiency and user experience.
-          </p>
-
-        </div>
+          </p> */}
 
 
       </div>
@@ -38,7 +36,9 @@ const Hero = () => {
 
       <div className=" flex justify-center items-center ">
 
-        <img className="my-80 hidden mt-[62vh] w-[90%] xl:block xl:mt-[48vh] lg:block lg:w-[30%]" src={PersoalDesktop} alt="" />
+        {/* <img className="my-80 hidden mt-[62vh] w-[90%] xl:block xl:mt-[48vh] lg:block lg:w-[30%]" src={PersoalDesktop} alt="" /> */}
+
+        {/* <SparklesPreview /> */}
       </div>
       {/* <ComputersCanvas /> */}
 

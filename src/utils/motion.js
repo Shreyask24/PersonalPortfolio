@@ -1,3 +1,6 @@
+import { clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
+
 export const textVariant = (delay) => {
     return {
         hidden: {
@@ -86,3 +89,9 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
         },
     };
 };
+
+
+
+export function cn(...inputs) {
+    return twMerge(clsx(inputs));
+}

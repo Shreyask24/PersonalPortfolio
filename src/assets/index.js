@@ -20,9 +20,11 @@ import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 
 import valethi from "./company/valethi.png";
-import codsoft from "./company/codsoft.png";
-import oytie from "./company/oytie.png";
+import codsoft from "./company/codsoft.jpg";
+import oytie from "./company/oytie.jpg";
 import jellylogic from "./company/jellylogic.png";
+import defaultImg from "./company/default.jpg";
+import ujjwal from "./company/ujjwal.png";
 
 import movie from "./movie.png";
 import chatapp from "./chatapp.jpeg";
@@ -33,6 +35,7 @@ export {
   backend,
   creator,
   mobile,
+  ujjwal,
   web,
   github,
   menu,
@@ -41,6 +44,7 @@ export {
   figma,
   git,
   html,
+  defaultImg,
   javascript,
   mongodb,
   nodejs,
