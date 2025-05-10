@@ -21,7 +21,7 @@ const Hero = () => {
 
         <h1 className={`${styles.heroHeadText} text-white text-center w-[70%]`}>Transforming Ideas into Successful <span className="text-[#915eff]"> Reality </span></h1>
 
-        <div className="w-[50%]">
+        <div className="w-[50%] max-sm:w-[80%]">
           <FlipWordsDemo />
         </div>
 
