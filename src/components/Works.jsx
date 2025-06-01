@@ -6,6 +6,8 @@ import { github } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { projects } from "../constants"
 import { fadeIn, textVariant } from "../utils/motion"
+import { PinContainer } from "./ui/3D-pin"
+import { AnimatedPinDemo } from "./AnimatedPinDemo"
 
 
 
@@ -110,22 +112,16 @@ const Works = () => {
 
         </motion.p>
 
-
-        <div className="mt-20 flex flex-wrap gap-7 ">
-
-          {projects.map((project, index) => (
-            <ProjectCard key={`project-${index}`}
-              index={index}
-              {...project}
-            />
-
-          ))}
-
+        <div className="mt-20 relative">
+          <AnimatedPinDemo />
         </div>
-
       </div>
     </>
   )
 }
+
+
+
+
 
 export default SectionWrapper(Works, "")

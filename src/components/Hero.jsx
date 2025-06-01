@@ -13,15 +13,12 @@ const Hero = () => {
   return (
 
 
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-[90vh] mx-auto">
 
       <div className="flex flex-col justify-center items-center w-full h-full">
-
-
-
         <h1 className={`${styles.heroHeadText} text-white text-center w-[70%]`}>Transforming Ideas into Successful <span className="text-[#915eff]"> Reality </span></h1>
 
-        <div className="w-[50%] max-sm:w-[80%]">
+        <div className="w-[50%] max-sm:w-[80%] max-sm:mt-8 max-sm:mb-36">
           <FlipWordsDemo />
         </div>
 

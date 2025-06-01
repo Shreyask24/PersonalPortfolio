@@ -27,7 +27,7 @@ import defaultImg from "./company/default.jpg";
 import ujjwal from "./company/ujjwal.png";
 
 import movie from "./movie.png";
-import chatapp from "./chatapp.jpeg";
+import chatapp from "./chatapp.png";
 import jobit from "./jobit.png";
 
 export {
