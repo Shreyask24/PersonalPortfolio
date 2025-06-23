@@ -18,6 +18,7 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
+import typescript from "./tech/typescript.webp";
 
 import valethi from "./company/valethi.png";
 import codsoft from "./company/codsoft.jpg";
@@ -58,5 +59,6 @@ export {
   jellylogic,
   chatapp,
   movie,
-  jobit
+  jobit,
+  typescript
 };

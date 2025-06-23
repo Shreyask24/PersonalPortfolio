@@ -3,7 +3,7 @@ import { PinContainer } from "./ui/3D-pin";
 
 export function AnimatedPinDemo() {
     return (
-        <div className="h-[40rem] max-sm:h-[120rem] w-full flex items-center max-sm:flex-col justify-center max-sm:mt-60">
+        <div className="h-[40rem] max-sm:h-[120rem] w-full flex items-center max-sm:flex-col justify-center max-sm:-mt-96">
             <PinContainer title="/syncronus-chat-application.netlify.app" href="https://syncronus-chat-application.netlify.app/">
                 <div
                     className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[21rem] h-[30rem]">
