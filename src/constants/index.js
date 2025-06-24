@@ -22,6 +22,14 @@ import {
     movie,
     typescript,
     threejs,
+    materialui,
+    shadcnui,
+    bootstrap,
+    reactquery,
+    axios,
+    gemini,
+    vscode,
+    postman,
 } from "../assets";
 
 export const navLinks = [
@@ -72,12 +80,8 @@ const technologies = [
         icon: typescript,
     },
     {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        name: "Tailwind CSS",
-        icon: tailwind,
+        name: "React Query",
+        icon: reactquery,
     },
     {
         name: "Node JS",
@@ -88,12 +92,44 @@ const technologies = [
         icon: mongodb,
     },
     {
+        name: "Axios",
+        icon: axios,
+    },
+    {
+        name: "Gemini",
+        icon: gemini,
+    },
+    {
+        name: "Tailwind CSS",
+        icon: tailwind,
+    },
+    {
+        name: "Material UI",
+        icon: materialui,
+    },
+    {
+        name: "Shadcn",
+        icon: shadcnui,
+    },
+    {
+        name: "Bootstrap",
+        icon: bootstrap,
+    },
+    {
         name: "git",
         icon: git,
     },
     {
+        name: "postman",
+        icon: postman,
+    },
+    {
         name: "figma",
         icon: figma,
+    },
+    {
+        name: "vscode",
+        icon: vscode,
     },
     {
         name: "Redux Toolkit",

@@ -18,7 +18,15 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
-import typescript from "./tech/typescript.webp";
+import typescript from "./tech/typescript.png";
+import materialui from "./tech/materialui.png";
+import shadcnui from "./tech/shadcnui.png";
+import bootstrap from "./tech/bootstrap.png";
+import reactquery from "./tech/reactquery.png";
+import axios from "./tech/axios.png";
+import gemini from "./tech/gemini.png";
+import vscode from "./tech/vscode.png";
+import postman from "./tech/postman.png";
 
 import valethi from "./company/valethi.png";
 import codsoft from "./company/codsoft.jpg";
@@ -60,5 +68,13 @@ export {
   chatapp,
   movie,
   jobit,
-  typescript
+  typescript,
+  materialui,
+  shadcnui,
+  bootstrap,
+  reactquery,
+  axios,
+  gemini,
+  vscode,
+  postman
 };
