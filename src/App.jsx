@@ -1,7 +1,8 @@
 import React from "react";
 
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Works, Tech } from './components';
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Works, Tech, TechInsights } from './components';
+import Footer from "./components/Footer";
 
 const App = () => {
 
@@ -14,7 +15,7 @@ const App = () => {
           {/* <Navbar /> */}
           <Hero />
         </div>
-
+        <TechInsights />
         <About />
         <Experience />
         <Tech />
@@ -25,6 +26,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
 
       </div>
 
