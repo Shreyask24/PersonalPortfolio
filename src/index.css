@@ -4,6 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* toast.css */
+/* Base toast style */
+.Toastify__toast {
+    @apply bg-transparent backdrop-blur-md text-white shadow-lg rounded-xl border border-white/10;
+}
+
+/* Progress bar → purple */
+.Toastify__progress-bar--success {
+    @apply bg-purple-600 text-purple-600;
+}
+
+/* Close button color */
+.Toastify__close-button {
+    @apply text-white hover:text-purple-400;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
