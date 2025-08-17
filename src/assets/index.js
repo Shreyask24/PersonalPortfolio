@@ -76,5 +76,5 @@ export {
   axios,
   gemini,
   vscode,
-  postman
+  postman,
 };

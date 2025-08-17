@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
-import { styles } from "../styles"
+import { motion } from "framer-motion";
+import { styles } from "../styles";
 import ShinyText from "./ShinyText";
 import { lazy, Suspense, useEffect, useState } from "react";
 import { BsYoutube } from "react-icons/bs";
@@ -7,7 +7,7 @@ import { BsYoutube } from "react-icons/bs";
 const Hero = () => {
   return (
     <section className="relative w-full min-h-screen mx-auto flex flex-col justify-center items-center">
-      <div className="flex flex-col items-center justify-center px-4 py-12 md:py-20 min-h-[90vh]">
+      <div className="flex flex-col items-center justify-center px-4 py-12 md:py-20 h-screen md:h-[95vh]">
         {/* Headline */}
         <h1
           className={`${styles.heroHeadText} text-center text-white 
@@ -28,7 +28,8 @@ const Hero = () => {
       leading-relaxed mb-4 sm:mb-6`}
         >
           Transforming Ideas into Fast,{" "}
-          <ShinyText speed={2} text="Modern Websites" /> that Bring Your Vision to Successful Reality.
+          <ShinyText speed={2} text="Modern Websites" /> that Bring Your Vision
+          to Successful Reality.
         </p>
 
         {/* Role & Location */}
@@ -39,7 +40,10 @@ const Hero = () => {
 
         {/* USP */}
         <p className="text-center text-purple-400 text-xs sm:text-sm md:text-base mb-10 font-semibold">
-          <ShinyText speed={2} text="🚀 300+ YouTube Views • Latest Tech Insights" />
+          <ShinyText
+            speed={2}
+            text="🚀 300+ YouTube Views • Latest Tech Insights"
+          />
         </p>
 
         {/* CTA Buttons */}
@@ -60,7 +64,12 @@ const Hero = () => {
                 stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
               </svg>
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full blur-xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
@@ -84,14 +93,17 @@ const Hero = () => {
         </div>
       </div>
 
-
       {/* Scroll indicator */}
       <div className="flex justify-center">
         <a href="#techInsights">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{ y: [0, 24, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
               className="w-3 h-3 rounded-full bg-secondary mb-1 will-change-transform"
             />
           </div>
@@ -100,12 +112,12 @@ const Hero = () => {
 
       {/* Hidden SEO keywords */}
       <span className="sr-only">
-        Frontend Developer, Full-Stack Developer, MERN Stack Developer, Modern Web Developer,
-        Freelance Web Developer, Node.js Enthusiast, MongoDB Explorer, Open Source Contributor
+        Frontend Developer, Full-Stack Developer, MERN Stack Developer, Modern
+        Web Developer, Freelance Web Developer, Node.js Enthusiast, MongoDB
+        Explorer, Open Source Contributor
       </span>
     </section>
+  );
+};
 
-  )
-}
-
-export default Hero
+export default Hero;
