@@ -1,9 +1,9 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
+import backend from "./backend.webp";
+import creator from "./creator.webp";
+import mobile from "./mobile.webp";
+import web from "./web.webp";
+import github from "./github.webp";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -35,9 +35,9 @@ import jellylogic from "./company/jellylogic.png";
 import defaultImg from "./company/default.jpg";
 import ujjwal from "./company/ujjwal.png";
 
-import movie from "./movie.png";
-import chatapp from "./chatapp.png";
-import jobit from "./jobit.png";
+import movie from "./movie.webp";
+import chatapp from "./chatapp.webp";
+import jobit from "./jobit.webp";
 
 export {
   logo,

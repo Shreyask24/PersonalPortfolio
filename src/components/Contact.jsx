@@ -70,16 +70,13 @@ const Contact = () => {
         className="xl:mt-12 xl:flex-row 
     flex-col-reverse flex gap-10 overflow-hidden"
       >
-        <div
-          className="flex-[0.75] bg-black-100 p-8 
-        rounded-2xl"
-        >
+        <div className="flex-[0.75] bg-black-100 p-5 md:p-8 mt-5 md:mt-0 rounded-2xl">
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="mt-2 flex flex-col gap-4 h-[90vh]"
+            className="mt-4 flex flex-col gap-4 md:h-[83vh] h-[85vh]"
           >
-            <label className="mt-5 flex flex-col ">
+            <label className="flex flex-col ">
               <span className="text-white font-medium mb-4">Full Name</span>
 
               <input
