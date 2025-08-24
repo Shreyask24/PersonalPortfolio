@@ -66,7 +66,7 @@ const About = () => {
           presence
         </strong>
         , let’s connect — I’d love to bring your ideas to life and grow
-        together. 🚀
+        together.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
