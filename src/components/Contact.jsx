@@ -19,9 +19,9 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
-    setForm({ ...form, [name]: [value] });
+    setForm({ ...form, [name]: value });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -37,24 +37,38 @@ const Contact = () => {
           to_email: "kshreyas495@gmail.com",
           message: form.message,
         },
-
         "YVxfk7mYu53kjrima"
       )
       .then(() => {
         setLoading(false);
-        toast.success("Thank you. I Will Get Back To You As Soon As Possible.");
-
-        setForm(
+        toast.success(
+          "Thank you for reaching out! I’ll get back to you shortly.",
           {
-            name: "",
-            email: "",
-            message: "",
-          },
-          (error) => {
-            setLoading(false);
-            toast.error("Something Went Wrong!");
+            duration: 4000,
+            position: "bottom-right",
+            style: {
+              background: "#1E293B", // slate-800
+              color: "#F8FAFC", // slate-50
+              fontSize: "14px",
+              fontWeight: "500",
+              borderRadius: "12px",
+              padding: "20px 16px",
+              width: "430px",
+              boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
+            },
+            iconTheme: {
+              primary: "#10B981", // emerald-500
+              secondary: "#fff",
+            },
           }
         );
+
+        setForm({ name: "", email: "", message: "" });
+      })
+      .catch((error) => {
+        setLoading(false);
+        toast.error("Something went wrong!");
+        console.error(error);
       });
   };
 
@@ -63,11 +77,23 @@ const Contact = () => {
       <motion.div variants={textVariant()}>
         <p className={styles.sectionHeadText}>Contact</p>
 
-        <h2 className={styles.sectionSubText}>Get In Touch</h2>
+        <h2 className={styles.sectionSubText}>Get in touch with me.</h2>
       </motion.div>
 
+      <p className="text-secondary text-sm mt-6 max-w-xl font-bold capitalize text-justify">
+        I usually respond within 24 hours. Feel free to reach out regarding web
+        development projects, frontend engineering roles, or collaborations. You
+        can also email me directly at
+        <a
+          href="mailto:hello.shreyasdevx@gmail.com"
+          className="text-white underline ml-1 normal-case"
+        >
+          hello.shreyasdevx@gmail.com
+        </a>
+      </p>
+
       <div
-        className="xl:mt-12 xl:flex-row 
+        className="xl:mt-10 xl:flex-row 
     flex-col-reverse flex gap-10 overflow-hidden"
       >
         <div className="flex-[0.75] bg-black-100 p-5 md:p-8 mt-5 md:mt-0 rounded-2xl">

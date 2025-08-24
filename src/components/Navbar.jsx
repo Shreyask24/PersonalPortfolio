@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { IoIosMenu } from "react-icons/io";
@@ -9,6 +9,24 @@ import { IoClose } from "react-icons/io5";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // ✅ Reset active link & URL when scrolled back to top
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY === 0) {
+        setActive(""); // reset highlight
+        if (location.hash) {
+          navigate("/", { replace: true }); // reset URL back to `/`
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [location.hash, navigate]);
 
   return (
     <nav

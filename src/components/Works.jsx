@@ -1,81 +1,15 @@
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { PinContainer } from "./ui/3D-pin";
 import { AnimatedPinDemo } from "./AnimatedPinDemo";
-
-const ProjectCard = ({
-  index,
-  name,
-  image,
-  description,
-  tags,
-  source_code_link,
-}) => {
-  return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl 
-        sm:w-[360px] w-full "
-      >
-        <div className="relative w-full h-[320px]">
-          <img
-            src={image}
-            alt={name}
-            className="w-full h-full object-cover rounded-2xl"
-          />
-        </div>
-
-        <div
-          className="absolute inset-0 flex justify-end m-3 
-        card-img_hover"
-        >
-          <div
-            onClick={() => window.open(source_code_link, "_blank")}
-            className="black-gradient w-10 h-10 rounded-full flex 
-          justify-center items-center cursor-pointer"
-          >
-            <img
-              src={github}
-              alt="github"
-              className="w-1/2 h-1/2 object-contain"
-            />
-          </div>
-        </div>
-
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
-        </div>
-
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-      </Tilt>
-    </motion.div>
-  );
-};
 
 const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionHeadText}>My Work</p>
+        <p className={styles.sectionHeadText}>Showcasing My Work</p>
 
         <h2 className={styles.sectionSubText}>Projects.</h2>
       </motion.div>
@@ -84,13 +18,22 @@ const Works = () => {
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] 
-        max-w-3xl leading-[30px]"
+        max-w-6xl leading-[30px] text-justify"
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          Here’s a selection of projects I’ve built — from{" "}
+          <strong>real-time chat applications</strong> and{" "}
+          <strong>AI-powered SaaS platforms</strong> to{" "}
+          <strong>scalable full stack web apps</strong>. Each project highlights
+          my ability to combine{" "}
+          <strong>
+            modern technologies like React, Next.js, Node.js, and MongoDB{" "}
+          </strong>
+          with problem-solving skills to deliver{" "}
+          <strong>fast, secure, and user-friendly digital solutions</strong>.
+          These examples reflect how I work with clients and teams to turn ideas
+          into impactful products. Check out the <strong>live demos</strong> and{" "}
+          <strong>GitHub code</strong> to see them in action — and imagine what
+          we could build together.
         </motion.p>
 
         <div className="mt-20 relative">
